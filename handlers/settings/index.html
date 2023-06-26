@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>ZhangOS 设置</title>
+        <base target="_blank">
+        <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
+    </head>
+    <body class="mdui-theme-layout-auto mdui-theme-primary-light-green mdui-theme-accent-green">
+        <div class="mdui-container">
+            <div class="mdui-row">
+                <div class="mdui-col-xs-12 mdui-typo">
+                    <h1>ZhangOS 设置</h1>
+                    <div class="mdui-divider"></div>
+                    <div class="mdui-panel" mdui-panel>
+                        <div class="mdui-panel-item">
+                            <div class="mdui-panel-item-header">
+                                <div class="mdui-panel-item-title">修改用户信息</div>
+                                <i class="mdui-icon material-icons">&#xe313;</i>
+                            </div>
+                            <div class="mdui-panel-item-body">
+                                <form id="user-change">
+                                    <div class="mdui-textfield mdui-textfield-floating-label">
+                                        <i class="mdui-icon material-icons">&#xe853;</i>
+                                        <label class="mdui-textfield-label">用户名</label>
+                                        <input class="mdui-textfield-input" type="text" name="username" pattern="^[a-zA-Z0-9_-]{1,15}$" required></input>
+                                        <div class="mdui-textfield-error">用户名不符合规范</div>
+                                        <div class="mdui-textfield-helper">用户名只能由大小写英文字母、数字、下划线和连接线（-）构成，并且长度不能超过15个字符</div>
+                                    </div>
+                                    <div class="mdui-textfield mdui-textfield-floating-label">
+                                        <i class="mdui-icon material-icons">&#xe897;</i>
+                                        <label class="mdui-textfield-label">密码</label>
+                                        <input class="mdui-textfield-input" type="password" name="password" pattern="^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*? ]).*$" required></input>
+                                        <div class="mdui-textfield-error">密码强度不够</div>
+                                        <div class="mdui-textfield-helper">密码必须包含至少一个大写字母、一个小写字母、一个数字和一个特殊字符，并且总长度必须大于6个字符</div>
+                                    </div>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" type="submit" mdui-panel-item-close>确认修改</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+        <script src="365.js"></script>
+    </body>
+</html>

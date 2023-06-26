@@ -1,0 +1,26 @@
+{
+  "name": "zhang-os",
+  "version": "1.0.0",
+  "description": "小张网络操作系统",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MrZhang365/ZhangOS.git"
+  },
+  "author": "MrZhang365",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/MrZhang365/ZhangOS/issues"
+  },
+  "homepage": "https://github.com/MrZhang365/ZhangOS#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.18.2",
+    "express-basic-auth": "^1.2.1",
+    "moment": "^2.29.4"
+  },
+  "type": "module"
+}
